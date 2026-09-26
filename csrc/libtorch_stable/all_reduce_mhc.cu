@@ -16,7 +16,10 @@ constexpr int kCluster = 5;
 constexpr int kPacks = kHidden / Pack::size;
 
 __global__ __launch_bounds__(kThreads)
-    __cluster_dims__(1, kCluster, 1) void all_reduce_mhc_kernel(
+#if defined(__CUDA_ARCH__) && __CUDA_ARCH__ >= 900
+    __cluster_dims__(1, kCluster, 1)
+#endif
+    void all_reduce_mhc_kernel(
         const Pack* input, const Pack* residual, const float* post,
         const float* comb, const float* pre, const Pack* weight, Pack* output,
         Pack* normalized, Pack* local, Pack* multicast, uint32_t* epochs,
