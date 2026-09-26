@@ -182,7 +182,6 @@ dpcpp-cpp-rt==2026.1.0
     #   onemkl-sycl-lapack
     #   onemkl-sycl-rng
     #   onemkl-sycl-sparse
-    #   torch
 einops==0.8.2
     # via -r requirements/test/../common.txt
 email-validator==2.3.0
@@ -215,7 +214,6 @@ filelock==3.32.3
     #   datasets
     #   huggingface-hub
     #   modelscope
-    #   torch
 fonttools==4.64.0
     # via matplotlib
 frozenlist==1.8.0
@@ -227,11 +225,9 @@ fsspec==2026.6.0
     #   datasets
     #   evaluate
     #   huggingface-hub
-    #   torch
 ftfy==6.3.1
     # via
     #   -r requirements/test/xpu.in
-    #   open-clip-torch
 google-api-core==2.34.0
     # via
     #   google-cloud-core
@@ -302,7 +298,6 @@ huggingface-hub==1.31.0
     #   accelerate
     #   datasets
     #   evaluate
-    #   open-clip-torch
     #   sentence-transformers
     #   timm
     #   tokenizers
@@ -331,23 +326,19 @@ ijson==3.5.1
 impi-rt==2021.18.1
     # via
     #   oneccl
-    #   torch
 iniconfig==2.3.0
     # via pytest
 intel-cmplr-lib-rt==2026.1.0
     # via
     #   intel-sycl-rt
-    #   torch
 intel-cmplr-lib-ur==2026.1.0
     # via
     #   intel-openmp
     #   intel-sycl-rt
-    #   torch
 intel-cmplr-lic-rt==2026.1.0
     # via
     #   intel-opencl-rt
     #   intel-sycl-rt
-    #   torch
 intel-opencl-rt==2026.1.0
     # via
     #   dpcpp-cpp-rt
@@ -356,19 +347,15 @@ intel-opencl-rt==2026.1.0
     #   onemkl-sycl-lapack
     #   onemkl-sycl-rng
     #   onemkl-sycl-sparse
-    #   torch
 intel-openmp==2026.1.0
     # via
     #   dpcpp-cpp-rt
     #   mkl
-    #   torch
 intel-pti==1.0.1
-    # via torch
 intel-sycl-rt==2026.1.0
     # via
     #   dpcpp-cpp-rt
     #   oneccl
-    #   torch
 interegular==0.3.3
     # via lm-format-enforcer
 isodate==0.7.2
@@ -378,7 +365,6 @@ jinja2==3.1.6
     #   -c requirements/xpu.txt
     #   fastapi
     #   lm-eval
-    #   torch
 jiter==0.16.0
     # via
     #   anthropic
@@ -470,7 +456,6 @@ mkl==2026.1.0
     #   onemkl-sycl-lapack
     #   onemkl-sycl-rng
     #   onemkl-sycl-sparse
-    #   torch
 model-hosting-container-standards==0.1.16
     # via
     #   -c requirements/common.txt
@@ -504,7 +489,6 @@ multiprocess==0.70.19
 narwhals==2.24.0
     # via scikit-learn
 networkx==3.6.1
-    # via torch
 ninja==1.13.0
     # via -r requirements/test/../common.txt
 nltk==3.10.3
@@ -543,33 +527,23 @@ numpy==2.2.6
     #   soundfile
     #   soxr
     #   tensorizer
-    #   torchvision
     #   transformers
     #   xgrammar
 oneccl==2022.1.1
     # via
     #   oneccl-devel
-    #   torch
 oneccl-devel==2022.1.1
-    # via torch
 onemkl-license==2026.1.0
     # via
     #   mkl
-    #   torch
 onemkl-sycl-blas==2026.1.0
     # via
     #   onemkl-sycl-lapack
     #   onemkl-sycl-sparse
-    #   torch
 onemkl-sycl-dft==2026.1.0
-    # via torch
 onemkl-sycl-lapack==2026.1.0
-    # via torch
 onemkl-sycl-rng==2026.1.0
-    # via torch
 onemkl-sycl-sparse==2026.1.0
-    # via torch
-open-clip-torch==2.32.0
     # via -r requirements/test/xpu.in
 openai==3.2.0
     # via
@@ -665,7 +639,6 @@ pillow==12.3.0
     #   -r requirements/test/../common.txt
     #   matplotlib
     #   mistral-common
-    #   torchvision
 platformdirs==4.11.3
     # via pooch
 pluggy==1.6.0
@@ -836,7 +809,6 @@ pyyaml==6.0.3
     #   transformers
     #   uvicorn
 pyzes==0.1.2
-    # via torch
 pyzmq==27.1.0
     # via
     #   -c requirements/common.txt
@@ -855,7 +827,6 @@ regex==2026.7.19
     # via
     #   -r requirements/test/../common.txt
     #   nltk
-    #   open-clip-torch
     #   sacrebleu
     #   tiktoken
     #   transformers
@@ -916,7 +887,6 @@ safetensors==0.8.0
     #   -c requirements/common.txt
     #   -r requirements/test/../common.txt
     #   accelerate
-    #   open-clip-torch
     #   timm
     #   transformers
 schemathesis==4.24.3
@@ -953,7 +923,6 @@ setuptools==80.10.2
     #   model-hosting-container-standards
     #   modelscope
     #   pytablewriter
-    #   torch
 shellingham==1.5.4
     # via typer
 simsimd==6.5.16
@@ -1003,7 +972,6 @@ structlog==26.1.0
 supervisor==4.3.0
     # via model-hosting-container-standards
 sympy==1.14.0
-    # via torch
 tabledata==1.3.5
     # via pytablewriter
 tabulate==0.10.0
@@ -1012,13 +980,11 @@ tbb==2023.1.0
     # via
     #   intel-opencl-rt
     #   mkl
-    #   torch
 tblib==3.1.0
     # via -r requirements/test/xpu.in
 tcmlib==1.5.0
     # via
     #   tbb
-    #   torch
     #   umf
 tcolorpy==0.1.7
     # via pytablewriter
@@ -1042,29 +1008,23 @@ tiktoken==0.14.0
 timm==1.0.28
     # via
     #   -r requirements/test/xpu.in
-    #   open-clip-torch
 tokenizers==0.23.1
     # via
     #   -c requirements/common.txt
     #   -r requirements/test/../common.txt
     #   cohere
     #   transformers
-torch==2.14.0+xpu
     # via
     #   -c requirements/xpu.txt
     #   accelerate
     #   compressed-tensors
     #   mteb
-    #   open-clip-torch
     #   runai-model-streamer
     #   sentence-transformers
     #   tensorizer
     #   timm
-    #   torchvision
     #   xgrammar
-torchvision==0.29.0+xpu
     # via
-    #   open-clip-torch
     #   timm
 tqdm==4.70.0
     # via
@@ -1076,7 +1036,6 @@ tqdm==4.70.0
     #   modelscope
     #   mteb
     #   nltk
-    #   open-clip-torch
     #   openai
     #   pqdm
     #   sentence-transformers
@@ -1096,7 +1055,6 @@ triton==3.8.0+xpu
     #   xgrammar
 triton-xpu==3.8.0
     # via
-    #   torch
     #   triton
 truststore==0.10.4
     # via
@@ -1154,7 +1112,6 @@ typing-extensions==4.16.0
     #   sentence-transformers
     #   soundfile
     #   starlette
-    #   torch
     #   typing-inspection
     #   xgrammar
 typing-inspection==0.4.4
@@ -1166,7 +1123,6 @@ typing-inspection==0.4.4
 umf==1.1.0
     # via
     #   intel-cmplr-lib-ur
-    #   torch
 urllib3==2.7.0
     # via
     #   blobfile
